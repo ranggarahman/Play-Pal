@@ -1,25 +1,15 @@
 version: 2.1
- 
+
 orbs:
   android: circleci/android@0.2.1
- 
+
 jobs:
   build:
-    executor: 
-      java17:
-        docker:
-          - image: 'cimg/openjdk:17.0'
+    docker:
+      - image: circleci/openjdk:17-jdk  # Specify Java 17 here
+    executor: android/android
     steps:
       - checkout
-      - run:
-          name: Get Public Key
-          command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B53DC80D13EDEF05
-      - run:
-          name: Install OpenJDK 17
-          command: |
-            sudo apt-get update
-            sudo apt install openjdk-17-jdk
-            java -version
       - restore_cache:
           key: android-orb-v1-
       - run:
@@ -36,7 +26,7 @@ jobs:
       - run:
           name: Run Build
           command: ./gradlew build
-      - store_artifacts: 
+      - store_artifacts:
           path: app/build/reports
           destination: reports
       - run:
@@ -44,6 +34,6 @@ jobs:
           command: ./gradlew lint test
       - store_test_results:
           path: app/build/test-results
-      - store_artifacts:  
+      - store_artifacts:
           path: app/build/outputs/apk/debug/
           destination: artifact-file
