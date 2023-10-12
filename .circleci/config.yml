@@ -5,9 +5,10 @@ orbs:
  
 jobs:
   build:
-    executor: android/android
-    environment:
-      JVM_OPTS: -Dorg.gradle.java.home=/usr/lib/jvm/java-17-openjdk-amd64
+    executors:
+     java17:
+       docker:
+         - image: 'cimg/openjdk:17.0'
     steps:
       - checkout
       - restore_cache:
