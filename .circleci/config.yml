@@ -9,6 +9,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Get Public Key
+          command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B53DC80D13EDEF05
+      - run:
           name: Install OpenJDK 17
           command: |
             sudo apt-get update && sudo apt-get install openjdk-17-jdk
