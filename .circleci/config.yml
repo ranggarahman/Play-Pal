@@ -5,15 +5,16 @@ orbs:
  
 jobs:
   build:
-    docker:
-      - image: circleci/openjdk:17-jdk  # Specify Java 17 here
-    executor: 
-      name: android/android
-      java: openjdk-17
+    executor: android/android
     steps:
       - checkout
-      - setup_java:
-          version: 17
+      - run:
+          name: Install OpenJDK 17
+          command: |
+            sudo apt-get update && sudo apt-get install openjdk-17-jdk
+            sudo update-alternatives --set java /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+            sudo update-alternatives --set javac /usr/lib/jvm/java-17-openjdk-amd64/bin/javac
+            java -version
       - restore_cache:
           key: android-orb-v1-
       - run:
