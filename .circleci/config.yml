@@ -6,6 +6,8 @@ orbs:
 jobs:
   build:
     executor: android/android
+    environment:
+      JVM_OPTS: -Dorg.gradle.java.home=/usr/lib/jvm/java-17-openjdk-amd64
     steps:
       - checkout
       - restore_cache:
