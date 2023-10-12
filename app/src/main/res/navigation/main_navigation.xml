@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/navigation_home_fragment">
+
+    <fragment
+        android:id="@+id/navigation_home_fragment"
+        android:name="com.example.playpal.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_navigation_home_fragment_to_navigation_detail_fragment"
+            app:destination="@id/navigation_detail_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_detail_fragment"
+        android:name="com.example.playpal.detail.GameDetailActivity"
+        android:label="fragment_game_detail"
+        tools:layout="@layout/activity_game_detail" />
+
+</navigation>

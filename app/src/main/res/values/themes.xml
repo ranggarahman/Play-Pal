@@ -6,4 +6,9 @@
     </style>
 
     <style name="Theme.PlayPal" parent="Base.Theme.PlayPal" />
+
+    <style name="Theme.PlayPal.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.PlayPal.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Play Pal</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_favorite">Favorite</string>
+    <string name="menu_text_favorite">Favorite</string>
+    <string name="menu_text_home">Home</string>
+    <string name="desc_game_image">Game Image</string>
+    <string name="average_playtime">Average Playtime : %1$s</string>
+    <string name="game_release_date">Release Date : %1$s</string>
+    <string name="game_metacritic_rating">Metacritic Rating : %1$s</string>
 </resources>
