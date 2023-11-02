@@ -21,7 +21,7 @@ class NetworkModule {
 
         val baseHost = "api.rawg.io"
         val certificatePinner = CertificatePinner.Builder()
-            .add(baseHost, "sha256/TPHqfOxqUVvhHmuaef0sC3tHur5b1L3XU/fDFwHJQ=")
+            .add(baseHost, "sha256/o/TPHqfOxqUVvhHmuaef0sC3tHur5b1L3XU/fDFwHJQ=")
             .add(baseHost, "sha256/81Wf12bcLlFHQAfJluxnzZ6Frg+oJ9PWY/Wrwur8viQ=")
             .add(baseHost, "sha256/hxqRlPTu1bMS/0DITB1SSu0vd4u/8l8TjPgfaAp63Gc=")
             .build()
