@@ -5,7 +5,7 @@ name : Android Build
 on:
   push:
     branches:
-      - 'main'
+      - 'master'
 
 # Define two jobs: test and apk
 jobs:
