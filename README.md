@@ -1,4 +1,4 @@
-<h1 align="center">Playpal 🎮</h1>
+<h1 align="center">PlayPal 🎮</h1>
 
 <p align="center">
   Android app to know more about your favorite games! <br>
