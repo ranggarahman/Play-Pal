@@ -3,7 +3,7 @@
 <p align="center">
   Android app to know more about your favorite games! <br>
   <a href="https://android-arsenal.com/api?level=23"><img alt="API" src="https://img.shields.io/badge/API-23%2B-brightgreen.svg?style=flat"/></a>
-  <a href="https://app.circleci.com/pipelines/github/reyghifari/UserGitHubAppMVVM"><img alt="Build Status" src="https://github.com/skydoves/Pokedex/workflows/Android%20CI/badge.svg"/></a> <br>
+  <a href="https://github.com/ranggarahman/Play-Pal/actions"><img alt="Build Status" src="https://github.com/skydoves/Pokedex/workflows/Android%20CI/badge.svg"/></a> <br>
 </p>
 
 <p align="center">  
